@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ReliefNet AI</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+🚨 ReliefNet AI Dashboard
+
+<div class="stats">
+<div class="stat">Zones: <span id="zones">0</span></div>
+<div class="stat">Critical: <span id="critical">0</span></div>
+<div class="stat">People: <span id="people">0</span></div>
+</div>
+</div>
+
+<div class="container">
+
+<div class="sidebar">
+
+<div class="card">
+<h3>⚙ Control Panel</h3>
+<button onclick="startDisaster()">Start Disaster</button>
+<button onclick="sendSMS()">Send SMS Alert</button>
+<button onclick="deployDrone()">Deploy Drone</button>
+<button onclick="allocate()">Auto Allocate</button>
+</div>
+
+<div class="card">
+<h3>🤝 Donation Transfer</h3>
+<select id="donor"></select>
+<select id="receiver"></select>
+<button onclick="donate()">Donate Resources</button>
+</div>
+
+<div class="card">
+<h3>🏥 Emergency Connect</h3>
+<button onclick="ngo()">Connect Nearby NGO</button>
+</div>
+
+<div class="card">
+<h3>🤖 AI Recommendation</h3>
+<div id="aiBox">Waiting...</div>
+</div>
+
+<div class="card">
+<h3>👥 Zone Details</h3>
+<div id="details">Click any zone</div>
+</div>
+
+</div>
+
+<div id="map"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
