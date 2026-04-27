@@ -12,7 +12,7 @@ let completedZones = [];
 let disasterStarted = false;
 
 // We will use a variable for the backend URL so it's easy to change later when deploying.
-const BACKEND_URL = "http://127.0.0.1:5000";
+const BACKEND_URL = "https://relieefnet-ai.onrender.com";
 
 // ---------------- PAGE LOAD ----------------
 window.onload = async function () {
